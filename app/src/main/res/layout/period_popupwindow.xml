@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="459dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_period"
+        android:background="#f8f8fa"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/btn_period_cancel"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="#00ffffff"
+            android:text="@string/link_cancle"
+            android:textColor="#050505"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_period_done"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#00ffffff"
+            android:clickable="true"
+            android:text="@string/sure"
+            android:textColor="#050505"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <!-- 该标签（继承自View的xml属性）android:clickable的值必须是boolean值，即true、false。该标签目的是设置button是否可以被点击 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_period"
+        android:background="#FFF"
+        android:orientation="vertical"
+ >
+
+        <ListView
+            android:id="@+id/lv_period_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

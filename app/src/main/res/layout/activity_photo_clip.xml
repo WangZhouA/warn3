@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aaaaaa" >
+
+    <com.example.giftsst.view.ClipImageLayout
+        android:id="@+id/id_clipImageLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.example.giftsst.view.ClipImageLayout>
+
+    <Button
+        android:id="@+id/bt_photo_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:text="取消"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/bt_photo_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:textSize="30dp"
+        android:text="选取"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

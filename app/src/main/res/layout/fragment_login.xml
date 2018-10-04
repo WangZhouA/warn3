@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/llt_num"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+
+
+
+        <EditText
+            android:drawableLeft="@drawable/ic_iphone"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/fra_login_num"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:hint="@string/login_number_message"
+            android:maxLength="11"
+            android:digits="0123456789"
+            android:singleLine="true"
+            android:textColor="#42000000"
+            android:drawablePadding="15dp"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/llt_num"
+        android:background="@color/gry"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/llt_pas"
+        android:layout_below="@+id/llt_num"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+
+
+
+        <EditText
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="15dp"
+            android:id="@+id/fra_login_pas"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:hint="@string/login_password_message"
+            android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM~!@#$%^*."
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#42000000"
+            android:textSize="14dp"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="49dp">
+
+            <ImageButton
+                android:id="@+id/frag_login_eyes"
+                android:background="#00000000"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_open"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/two_paint"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/llt_pas"
+        android:background="@color/gry"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/two_paint"
+        android:layout_height="wrap_content">
+
+
+        <!--这里可能要放一个自动登录的按钮-->
+
+        <Button
+
+            android:id="@+id/fra_fro_btn"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/forgot_password"
+            android:textColor="#4F5154"
+            android:textSize="14dp"
+
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_below="@+id/two_paint"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:text="@string/login"
+        android:background="@drawable/def_login_btn"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_onclick"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            >
+            <TextView
+                android:id="@+id/my_devices_list_tx1"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/my_devices_list_mg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/my_devices_list_tx1"
+                android:src="@drawable/equipment" />
+
+            <TextView
+                android:id="@+id/my_devices_list_tx2"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/my_devices_list_mg1" />
+
+            <TextView
+                android:id="@+id/my_devices_list_tx3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/my_devices_list_tx2"
+                android:text="@string/my_devices_text"
+                android:textColor="#89000000"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/my_devices_unbound_btn"
+            android:layout_width="62dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/def_my_deviced_btn"
+            android:text="@string/my_devices_btn"
+            android:visibility="gone"
+           />
+
+        <ImageButton
+            android:id="@+id/my_devices_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/input"
+            android:background="@null"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

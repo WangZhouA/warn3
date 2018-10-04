@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chlibrary/chlibrary.iml" filepath="$PROJECT_DIR$/chlibrary/chlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refresh-footer/refresh-footer.iml" filepath="$PROJECT_DIR$/refresh-footer/refresh-footer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refresh-header/refresh-header.iml" filepath="$PROJECT_DIR$/refresh-header/refresh-header.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refresh-layouts/refresh-layouts.iml" filepath="$PROJECT_DIR$/refresh-layouts/refresh-layouts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/warn3.iml" filepath="$PROJECT_DIR$/warn3.iml" />
+    </modules>
+  </component>
+</project>

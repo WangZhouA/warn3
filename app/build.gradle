@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.saiyi"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/core.jar')
+    compile project(path: ':chlibrary')
+    compile project(path: ':chlibrary')
+    compile project(':refresh-footer')
+    compile project(':refresh-header')
+    compile project(':refresh-layouts')
+    compile files('libs/okhttp-3.2.0.jar')
+    compile files('libs/okio-1.10.0.jar')
+    compile files('libs/glide-3.7.0.jar')
+    compile files('libs/pgyer_sdk_2.5.6.jar')
+    compile files('libs/autobahn-0.5.0.jar')
+    compile files('libs/OkHttpFinal-2.0.7.jar')
+    compile files('libs/hiflying-iots-android-smartlink-7.0.3.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.google.code.gson:gson:2.7'
+    testCompile 'junit:junit:4.12'
+}

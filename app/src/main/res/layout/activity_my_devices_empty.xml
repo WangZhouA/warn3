@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/header_bar"></include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#CDCDCD"
+        ></View>
+
+    <LinearLayout
+        android:id="@+id/one_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="126dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/devices" />
+
+    </LinearLayout>
+
+<!--第二个布局-->
+
+
+  <!--<pers.zinclee123.pullrefreshlayout.PullRefreshLayout-->
+      <!--android:id="@+id/prl_test"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="match_parent"-->
+      <!--android:background="@color/colorPrimary"-->
+      <!--&gt;-->
+
+  <com.baoyz.swipemenulistview.SwipeMenuListView
+      android:id="@+id/swipeListview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+  </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+  <!--</pers.zinclee123.pullrefreshlayout.PullRefreshLayout>-->
+
+</LinearLayout>

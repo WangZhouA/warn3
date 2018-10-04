@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saiyi.ui.activity.SetTimeBCActivity"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:id="@+id/header_all"
+        android:background="@drawable/alarm_bg"
+        >
+
+        <ImageButton
+            android:id="@+id/header_left"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_back_w"/>
+
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:text="@string/Fixed_protection_time"
+            />
+
+        <ImageButton
+            android:id="@+id/header_right"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/gou"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/blue"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bu_time"
+                android:textColor="#242424"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_bf_time"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/text_bg"
+                android:text="00:00"
+                android:textColor="#242424"
+                android:textSize="15dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ce_time"
+                android:textColor="#242424"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_cf_time"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/text_bg"
+                android:text="00:00"
+                android:textColor="#242424"
+                android:textSize="15dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_msg"
+        android:layout_marginTop="20dp"
+        android:textColor="#242424"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+
+        >
+
+        <com.saiyi.ui.view.CheckTextView
+            android:id="@+id/tv_week_one"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/tv_onclick"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#CDCDCD"
+            />
+
+
+
+        <com.saiyi.ui.view.CheckTextView
+            android:id="@+id/tv_week_two"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/tv_onclick"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#CDCDCD" />
+
+        <com.saiyi.ui.view.CheckTextView
+            android:id="@+id/tv_week_three"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/tv_onclick"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="#CDCDCD" />
+
+        <com.saiyi.ui.view.CheckTextView
+            android:id="@+id/tv_week_four"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/tv_onclick"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="#CDCDCD" />
+
+        <com.saiyi.ui.view.CheckTextView
+            android:id="@+id/tv_week_five"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/tv_onclick"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="#CDCDCD"
+            />
+
+        <com.saiyi.ui.view.CheckTextView
+            android:id="@+id/tv_week_six"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/tv_onclick"
+            android:gravity="center"
+            android:text="6"
+
+            android:textColor="#CDCDCD" />
+
+        <com.saiyi.ui.view.CheckTextView
+            android:id="@+id/tv_week_seven"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/tv_onclick"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="#CDCDCD" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CDCDCD"
+        ></View>
+
+
+
+
+</LinearLayout>

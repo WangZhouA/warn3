@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_bar"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gry" />
+
+
+
+    <!--<com.saiyi.ui.view.SlideListView-->
+        <!--android:id="@+id/my_devices_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</com.saiyi.ui.view.SlideListView>-->
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/my_devices_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+    
+    
+    
+
+</LinearLayout>

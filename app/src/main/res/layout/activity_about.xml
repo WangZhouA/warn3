@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+
+    >
+
+    <include layout="@layout/header_bar"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#CDCDCD"
+        ></View>
+
+
+     <com.saiyi.ui.view.CircleImageView
+         android:id="@+id/logo"
+         android:src="@drawable/personal_head_portrait"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_marginTop="60dp"
+
+         />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/Intelligent_burglar_alarm"
+         android:layout_gravity="center"
+         android:layout_marginTop="10dp"
+         android:textSize="13dp"
+         android:textColor="#6d6d72"
+         />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="90dp"
+        android:background="#CDCDCD"
+        ></View>
+
+    <RelativeLayout
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="46dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/The_current_version"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#CDCDCD"
+        ></View>
+
+
+
+</LinearLayout>

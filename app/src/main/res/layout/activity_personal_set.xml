@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_bar"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gry" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="34dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="@string/Head_portrait"
+            android:textColor="#6d6d72"
+            android:textSize="13dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/personal_set_input"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:src="@drawable/input" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/personal_set_head"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@+id/personal_set_input"-->
+            <!--android:background="@null"-->
+            <!--android:onClick="show"-->
+            <!--android:src="@drawable/personal_head_portrait" />-->
+
+            <com.saiyi.ui.view.CircleImageView
+                android:id="@+id/personal_set_head"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/personal_set_input"
+                android:background="@null"
+                android:onClick="show"
+                android:src="@drawable/personal_head_portrait"
+                ></com.saiyi.ui.view.CircleImageView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/llt_num"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gry" />
+
+    <LinearLayout
+        android:id="@+id/reName"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:text="@string/personal_name"
+            android:textColor="#6d6d72"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/personal_set_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+             android:gravity="center"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/llt_num"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gry" />
+
+
+</LinearLayout>
